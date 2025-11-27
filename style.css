@@ -2,9 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Center the navigation menu */
+nav.about ul {
+  display: flex;
+  justify-content: center; /* ensures menu items are in the middle */
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Change the white section under nav to blue */
+nav.about + section {
+  background-color: #4a5ab0; /* blue similar to nav background */
+}
 
 
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +37,7 @@ body {
   background: var(--background);
   color: var(--text-dark);
   line-height: 1.6;
-  scroll-behavior: smooth;   /* Smooth scroll for nav links */
+  scroll-behavior: smooth;  
 }
 
 /* Container */
@@ -258,7 +271,7 @@ footer {
 footer:hover {
   background: var(--light-blue);
 }
-/* From Uiverse.io by vinodjangid07 */ 
+
 .card {
   width: fit-content;
   height: fit-content;
@@ -297,7 +310,7 @@ footer:hover {
   background-color: #0072b1;
   transition-duration: .3s;
 }
-/* Whatsapp*/
+/* Github*/
 .containerFour:hover {
   background-color: #128C7E;
   transition-duration: .3s;
@@ -693,7 +706,7 @@ section {
     width: 250px;
   }
 }
-/* From Uiverse.io by Tsiangana */ 
+ 
 .botao {
   width: 125px;
   height: 45px;
@@ -754,5 +767,18 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+nav.about ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav.about + section {
+  background-color: #4a5ab0; 
 }
 
